@@ -6,7 +6,7 @@ let turn = "X";
 let isGameOver = false;
 
 //Functoin To Change The Turn 
-music.play();
+
 const changeTurn = () => {
     return turn === "X" ? "0" : "X"
 }
@@ -36,7 +36,7 @@ const checkWin = () => {
 }
 
 //Game Logic
-
+music.play();
 let boxes = document.getElementsByClassName("box");
 Array.from(boxes).forEach(element => {
     let boxtext = element.querySelector('.boxtext')
