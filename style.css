@@ -96,13 +96,16 @@ nav {
         align-items: center; */
 
     }
+    .info{
+        font-size: 1.1;
+    }
 
     .gameInfo {
         margin: 50px;
     }
 
     .gameInfo h1 {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
     }
 
     .container {
