@@ -1,12 +1,12 @@
 console.log("Welcome To Tic Tac Toe Made By Keshav Kumar Soni")
-// let music=new Audio("music.mp3");
+let music=new Audio("music.mp3");
 let audioTurn = new Audio("ting.mp3");
 let gameover=new Audio("gameover.mp3");
 let turn = "X";
 let isGameOver = false;
 
 //Functoin To Change The Turn 
-// music.play();
+music.play();
 const changeTurn = () => {
     return turn === "X" ? "0" : "X"
 }
