@@ -1,11 +1,12 @@
 console.log("Welcome To Tic Tac Toe Made By Keshav Kumar Soni")
 // let music=new Audio("music.mp3");
 let audioTurn = new Audio("ting.mp3");
-// let gameover=new Audio("gameover.mp3");
+let gameover=new Audio("gameover.mp3");
 let turn = "X";
 let isGameOver = false;
 
 //Functoin To Change The Turn 
+// music.play();
 const changeTurn = () => {
     return turn === "X" ? "0" : "X"
 }
@@ -28,13 +29,14 @@ const checkWin = () => {
             document.querySelector('.info').innerText = boxtext[e[0]].innerText + " Won"
             isGameOver = true;
             document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "200px"
+            gameover.play();
         }
 
     });
 }
 
 //Game Logic
-// music.play()
+
 let boxes = document.getElementsByClassName("box");
 Array.from(boxes).forEach(element => {
     let boxtext = element.querySelector('.boxtext')
@@ -47,7 +49,9 @@ Array.from(boxes).forEach(element => {
 
             if (!isGameOver) {
                 document.getElementsByClassName("info")[0].innerText = "Turn For " + turn;
+                
             }
+            
 
 
         }
@@ -62,6 +66,7 @@ reset.addEventListener('click', () => {
     });
     turn = "X"
     isGameOver = false;
+    gameover.play();
     document.getElementsByClassName("info")[0].innerText = "Turn For " + turn;
     document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "0px"
 

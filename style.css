@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    background: yellow;
+}
 
 nav ul {
     list-style: none;
@@ -15,6 +18,14 @@ nav {
     color: white;
     font-size: 27px;
 }
+/* h2{
+    font-family: cursive;
+    font-size: 1rem;
+    text-align: center;
+    
+   
+} */
+
 
 
 .gameContainer {
@@ -41,7 +52,7 @@ nav {
 }
 
 .box:hover {
-    background: rgb(223, 180, 243);
+    background: rgb(238, 211, 250);
 }
 
 .info {
@@ -79,10 +90,10 @@ nav {
     background: black;
     color: white;
     padding: 5px 7px;
-    font-size: 1rem;
+    font-size: 0.7rem;
     border: 2px solid black;
     border-radius: 10px;
-    width: 32%;
+    width: 30%;
     cursor: pointer;
     margin: 10px;
 }
